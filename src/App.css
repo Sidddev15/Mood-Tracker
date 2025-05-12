@@ -1,0 +1,105 @@
+/* Base reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Light Theme */
+.light {
+  background-color: #f9f9f9;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Theme */
+.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Container */
+div {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Toggle Theme Button */
+button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+/* Mood Input Form */
+form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6200ea;
+}
+
+/* Mood List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #eeeeee;
+  margin: 0.3rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.dark li {
+  background-color: #1e1e1e;
+}
+
+/* Clear Button */
+button:last-of-type {
+  background-color: #b00020;
+}
+
+button:last-of-type:hover {
+  background-color: #7f0014;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  form {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
